@@ -67,12 +67,12 @@
         ]
     },{
         "name": "open-source-library",
-        "website": "https://www.github.com/",
-	    "repo": "https://github.com/",
-	    "installation": "https://www.github.com",
+        "website": "https://rws-studio.github.com/open-src-library",
+	    "repo": "https://github.com/RWS-Studio/open-src-library",
+	    "installation": "https://www.github.com/open-src-library",
 	    "presentation": "This is a library with the main open-source projects in the world.",
 	    "license": "License",
-        "license_url": "https://github.com/",
+        "license_url": "https://github.com/open-src-library",
         "version": "0.1-beta",
         "tags": [
             "open-source",
