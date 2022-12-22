@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Test doc",
+        "description": "little description",
+        "text": "hello \nworld!",
+        "tags": [
+            "dev",
+            "devlopment",
+            "team"
+        ]
+    },
+    {
+        "name": "Get the API",
+        "description": "How to get the API of this project ?",
+        "text": "You can access to the JSON database at this address : [host]/api/db/db.json.\n\nYou can also get the docs database at this address : /api/db/docs.json.\n\nDid you know?\n\nA SQLite database will coming soon on GitHub !",
+        "tags": [
+            "dev",
+            "devlopment",
+            "team",
+            "open-source",
+            "opensource",
+            "library",
+            "api"
+        ]
+    },
+    {
+        "name": "open-source declaration",
+        "description": "List of all other open-source projects this project is using.",
+        "text": "HTML - CSS - JavaScript\n\nJSON\n\nJetBrains Mono\n\nGitHub Pages (if it can be included)\n\nThanks to all persons that have or are work for these projects and all others projects in the world :).",
+        "tags": [
+            "dev",
+            "devlopment",
+            "team",
+            "open-source",
+            "opensource"
+        ]
+    }
+]

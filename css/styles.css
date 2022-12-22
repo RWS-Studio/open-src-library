@@ -1,0 +1,20 @@
+/* Welpike */
+
+/* css for open-source-library */
+
+/* font : JetBrains Mono (https://www.jetbrains.com/lp/mono/)
+ * license : https://www.jetbrains.com/lp/mono/#license
+ * repo : https://github.com/JetBrains/JetBrainsMono
+ */
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/media/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}

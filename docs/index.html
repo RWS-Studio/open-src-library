@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open-source-library docs</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        /* temp style */
+        #api-docs-search-share-copy{display: none;}
+    </style>
+</head>
+<body id="docs-index">
+    <h1>open-source-library docs</h1>
+
+    <input type="text" name="search" id="api-docs-search" placeholder="Search...">
+    <div>
+        <kbd>Ctrl</kbd>
+        <kbd>+</kbd>
+        <kbd>m</kbd>
+    </div>
+
+    <div id="api-docs-container"></div>
+
+    <p id="api-docs-search-share"></p>
+
+    <button id="api-docs-search-share-copy" type="button" onclick="copy(event,window.location.host+window.location.pathname+'?search='+api_docs_search.value);">Copy</button>
+    
+    <script src="/api/utilities.js"></script>
+    <script src="/api/docs.js"></script>
+    <script>
+        // hide the button to copy the search share link when the search field is empty
+        api_docs_search.addEventListener("keyup", () => {
+            document.querySelector("#api-docs-search-share-copy").style.display = "block";
+        })
+    </script>
+</body>
+</html>
