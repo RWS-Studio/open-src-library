@@ -10,7 +10,7 @@
  * - found datas to have a big database
  */
 
-const db_url = "/api/db/db.json";
+const db_url = "/open-src-library/api/db/db.json";
 let datas = [];
 
 // home page
@@ -36,7 +36,7 @@ let project = [];
 function index_view(datas){
     // go on a random project feature
     let project_id = Math.floor(Math.random() * (datas.length - 0));
-    api_random_project.setAttribute("href", "/project.html?id="+project_id);
+    api_random_project.setAttribute("href", "/open-src-library/project.html?id="+project_id);
 }
 
 function project_view(datas){
@@ -52,7 +52,7 @@ function project_view(datas){
     // to have a HTML list with the tags + a link to search the projects with this tag
     let project_tags_html = "";
     project["tags"].forEach(tag => {
-        project_tags_html+="<li><a href='/search.html?q="+tag+"&src="+project["name"]+"'>"+tag+"</a></li>";
+        project_tags_html+="<li><a href='/open-src-library/search.html?q="+tag+"&src="+project["name"]+"'>"+tag+"</a></li>";
     });
 
     // put values in the html file
@@ -67,7 +67,7 @@ function project_view(datas){
     api_tags.innerHTML = project_tags_html;
 
     // search projects with this project in their tags
-    api_other_projects.setAttribute("href", "/search.html?q="+project["name"]+"&src="+project["name"]);
+    api_other_projects.setAttribute("href", "/open-src-library/search.html?q="+project["name"]+"&src="+project["name"]);
 }
 
 function search_view(datas){
@@ -144,7 +144,7 @@ function search_view(datas){
                 search_result_version.classList.add("api-search-result-version");
                 search_result_tags.classList.add("api-search-result-tags");
 
-                search_result_div.setAttribute("href", "/project.html?id="+search_results_ids[counter])
+                search_result_div.setAttribute("href", "/open-src-library/project.html?id="+search_results_ids[counter])
 
                 counter++;
             }else{
@@ -175,7 +175,7 @@ function search_view(datas){
             not_found_div.append(not_found_link);
 
             not_found_div.classList.add("api-error");
-            not_found_link.setAttribute("href", "https://github.com");
+            not_found_link.setAttribute("href", "https://github.com/RWS-Studio/open-src-library");
         }
 
         api_search_input.setAttribute("placeholder", q_output);
