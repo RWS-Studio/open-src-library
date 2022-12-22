@@ -2,7 +2,7 @@
 
 // js for the open-source-library docs
 
-const db_url = "/api/db/docs.json";
+const db_url = "/open-src-library/api/db/docs.json";
 let datas = [];
 
 // docs homepage
@@ -60,7 +60,7 @@ function docs_index_view(datas){
         doc_tags.classList.add("api-doc-tags");
         doc_description.classList.add("api-doc-description");
 
-        doc_div.setAttribute("href", "/docs/doc.html?id="+counter);
+        doc_div.setAttribute("href", "/open-src-library/docs/doc.html?id="+counter);
         doc_div.setAttribute("data-tags", doc["tags"]);
 
         counter++;
@@ -94,7 +94,7 @@ function doc_view(datas){
     const doc_id = url.searchParams.get('id'); // get doc id
 
     if(!doc_id){
-        window.location.href = "/docs/index.html"; // redirect to docs-index
+        window.location.href = "/open-src-library/docs/index.html"; // redirect to docs-index
     }
 
     doc=datas[doc_id];
@@ -102,7 +102,7 @@ function doc_view(datas){
     // to have a <ul> with the tags + a link to search the projects with this tag
     let doc_tags_html = "";
     doc["tags"].forEach(tag => {
-        doc_tags_html+="<li><a href='/docs/index.html?search="+tag+"&src="+doc["name"]+"'>"+tag+"</a></li>";
+        doc_tags_html+="<li><a href='/open-src-library/docs/index.html?search="+tag+"&src="+doc["name"]+"'>"+tag+"</a></li>";
     });
     
     // put values in the html file
