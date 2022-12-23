@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributing - open-source-library</title>
+    <link rel="stylesheet" href="/open-src-library/css/styles.css">
+</head>
+<body id="index">
+    <h1>contributing to the open-source-library project</h1>
+    <form action="/open-src-library/search.html" method="get">
+        <input type="search" name="q" id="api-search-input" placeholder="Type a project name">
+    </form>
+
+    <a href="/open-src-library/search.html">Search</a>
+    <a href="/open-src-library/api.html">API</a>
+    <a href="/open-src-library/docs/index.html">Docs</a>
+
+    <p>You can contributing to expand the database to expand the knowledge of this library.</p>
+  
+    <p>You can create a fork at <a href="https://github.com/RWS-Studio/open-src-library/fork">https://github.com/RWS-Studio/open-src-library/fork</a>.</p>
+
+    <p>You have to respect the syntax.</p>
+  
+    <pre>
+        {
+          "name": "",                     -> str
+          "website": "",                  -> url (http:// required)
+          "repo": "",                     -> url (http:// required)
+          "installation": "",             -> url (http:// required)
+          "presentation": "",             -> str
+          "license": "",                  -> str
+            "license_url": "",            -> url (http:// required)
+            "version": "",                -> str (more information : http://semver.org/)
+            "tags": [ 
+                "",                       -> str
+                ""                        -> str
+            ]
+        }
+    </pre>
+  
+    <script src="/open-src-library/api/utilities.js"></script>
+    <script src="/open-src-library/api/main.js"></script>
+</body>
+</html>
